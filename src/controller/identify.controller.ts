@@ -4,7 +4,7 @@ import { processContacts } from "../services/identify.service";
 export const identifyUser=async (req:Request,res:Response)=>{
 
     try {
-        const contact= await processContacts();
+        const contact= await processContacts(req.body);
 
         return res.status(200).json({
             data: contact,
