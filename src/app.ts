@@ -12,3 +12,5 @@ app.get("/", (req,res)=>{
 })
 
 app.use("/identify",identifyRoute)
+
+export default app;
